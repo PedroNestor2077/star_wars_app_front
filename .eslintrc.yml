@@ -3,16 +3,19 @@ extends:
     - 'eslint:recommended'
     - 'plugin:react/recommended'
     - 'plugin:@typescript-eslint/recommended'
+    - 'plugin:cypress/recommended'
 parserOptions:
     ecmaVersion: 2021
     sourceType: 'module'
     ecmaFeatures:
         jsx: true
+    parser: '@typescript-eslint/parser'
     project: './tsconfig.json'
 plugins:
     - react
     - react-hooks
     - '@typescript-eslint'
+    - 'cypress'
 rules:
     react/prop-types: 'off'
     react-hooks/rules-of-hooks: 'error'
