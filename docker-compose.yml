@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  star_wars_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/usr/src'
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
