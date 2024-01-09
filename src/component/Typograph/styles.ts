@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import colors from '../colors';
 
-export const Typograph = styled.div`
+interface Props {
+    maxWidth?: number;
+}
+
+export const Typograph = styled.div<Props>`
     font-family: 'Helvetica Neue';
+    max-width: ${(props) => props?.maxWidth && `${props?.maxWidth}px`};
 `;
 
 export const MainTitle = styled(Typograph)`

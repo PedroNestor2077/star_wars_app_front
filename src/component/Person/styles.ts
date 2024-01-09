@@ -13,6 +13,8 @@ export const PersonContainer = styled.div`
 export const PersonImage = styled.img`
     width: 432px;
     height: 230px;
+    background-color: ${colors.grey2};
+    border-radius: 2px;
 `;
 
 export const PersonName = styled(Typograph)`
