@@ -16,6 +16,23 @@ export interface People {
     gender: string;
 }
 
+/**
+ * @typedef {Object} People
+ * @property {string} name - The name of the person.
+ * @property {string} homeland - The homeland of the person.
+ * @property {string} heigth - The height of the person.
+ * @property {string} mass - The mass of the person.
+ * @property {string} gender - The gender of the person.
+ */
+
+/**
+ * Functional component for rendering information about a person.
+ *
+ * @component
+ * @param {People} props - The properties of the person.
+ * @returns {JSX.Element} - The JSX element representing the person.
+ */
+
 export const People = ({ name, homeland, heigth, mass, gender }: People) => {
     return (
         <PersonContainer className="person">

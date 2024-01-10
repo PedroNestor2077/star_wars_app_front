@@ -1,5 +1,30 @@
 import { SelectArrow, SelectContainer, Select as StyledSelect } from './styles';
 
+/**
+ * Represents an option for the Select component.
+ *
+ * @typedef {Object} Option
+ * @property {string} label - The label for the option.
+ * @property {any} value - The value associated with the option.
+ */
+
+/**
+ * @typedef {Object} Props
+ * @property {Option[]} options - An array of options for the Select component.
+ * @property {string} placeholder - The placeholder text for the Select component.
+ * @property {(value: any) => void} onSelect - The callback function invoked when an option is selected.
+ * @property {any} value - The currently selected value.
+ * @property {number} [maxWidth] - The maximum width of the Select component.
+ */
+
+/**
+ * Select component for handling user input selection.
+ *
+ * @component
+ * @param {Props} props - The properties of the Select component.
+ * @returns {JSX.Element} - The JSX element representing the Select component.
+ */
+
 type Option = {
     label: string;
     value: any;
