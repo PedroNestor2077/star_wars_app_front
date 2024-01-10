@@ -31,7 +31,7 @@
         "test:unit": "jest",
         "test:unit:watch": "jest --watch",
         "test:unit:coverage": "jest --coverage",
-        "test:integration": "cypress run",
+        "test:e2e": "cypress run",
         "cypress:open": "cypress open",
         "test:all": "cypress run && jest",
         "docker:start": "sudo docker-compose up"

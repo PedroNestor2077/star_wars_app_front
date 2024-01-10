@@ -18,7 +18,7 @@ export interface People {
 
 export const People = ({ name, homeland, heigth, mass, gender }: People) => {
     return (
-        <PersonContainer>
+        <PersonContainer className="person">
             <PersonImage />
             <PersonNameHomelandContainer>
                 <Spacing

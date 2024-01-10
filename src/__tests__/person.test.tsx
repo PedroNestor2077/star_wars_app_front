@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { Person } from '../component/Person';
+import { People } from '../component/Person';
 
 describe('Person Component', () => {
     const mockPersonData = {
@@ -13,7 +13,7 @@ describe('Person Component', () => {
     };
 
     it('renders Person component with correct data', () => {
-        const { getByText } = render(<Person {...mockPersonData} />);
+        const { getByText } = render(<People {...mockPersonData} />);
         expect(getByText('Luke Skywalker')).toBeInTheDocument();
         expect(getByText('Tatooine')).toBeInTheDocument();
         expect(getByText('HEIGTH • 172 cm')).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe('Person Component', () => {
     });
 
     it('renders Person component with correct spacing', () => {
-        const { getByTestId } = render(<Person {...mockPersonData} />);
+        const { getByTestId } = render(<People {...mockPersonData} />);
         expect(getByTestId('spacing-person-name')).toHaveStyle(
             'margin-top: 16px'
         );

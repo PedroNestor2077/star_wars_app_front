@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters Page Should match snapshot (mobile) 1`] = `
+<div>
+  <div
+    class="sc-beySPh ihIVNw"
+  >
+    <div
+      class="sc-fsYfdN sc-qZrbh CFNGT fSJQZJ"
+    >
+      Star Wars Characters
+    </div>
+    <div
+      bottom="50"
+      class="sc-iBdnpw dQJYDs"
+      mobilebottom="28"
+      mobiletop="10"
+      top="25"
+    >
+      <div
+        class="sc-fsYfdN sc-kFCroH cMJWGl hCaBYj"
+        maxwidth="934"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+    <nav
+      class="sc-csKJxZ jJLqlh"
+    >
+      <nav
+        class="sc-eTNRI cnjtxk"
+      >
+        <div
+          class="sc-guDLey djQIhZ"
+        >
+          <div
+            class="sc-iBdnpw fxJevY"
+            right="10"
+          >
+            <div
+              class="sc-fsYfdN sc-irLvIq CFNGT cliotF"
+            >
+              Filter By:
+            </div>
+          </div>
+          <div
+            class="sc-jTQCzO dykloI"
+            data-testid="select-container"
+            maxwidth="190"
+          >
+            <select
+              class="sc-eDLKkx eMDarx"
+              data-testid="select"
+              disabled=""
+            >
+              <option
+                value=""
+              >
+                All
+              </option>
+            </select>
+            <p
+              class="sc-gLLuof bDTxWV"
+            >
+              ⌄
+            </p>
+          </div>
+        </div>
+        <button
+          class="sc-dmyCSP kluULB"
+          disabled=""
+          maxwidth="158"
+        >
+          CLEAR ALL
+        </button>
+      </nav>
+    </nav>
+    <div
+      bottom="43"
+      class="sc-iBdnpw hhuMHj"
+      mobilebottom="28"
+      mobiletop="28"
+      top="50"
+    >
+      <div
+        class="sc-fsYfdN sc-jsEeTM CFNGT cTplmx"
+      >
+        All Characters
+      </div>
+    </div>
+    <div
+      class="sc-hLQSwg gkBTae"
+    />
+    <div
+      class="sc-brSamD cNiIRU"
+    >
+      <div
+        class="sc-iBdnpw fspkaG"
+        mobileleft="72"
+        mobileright="72"
+      >
+        <div
+          class="sc-fsYfdN sc-irLvIq CFNGT cliotF"
+        >
+          LOADING...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Characters Page Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-beySPh ihIVNw"
+  >
+    <div
+      class="sc-fsYfdN sc-qZrbh CFNGT fSJQZJ"
+    >
+      Star Wars Characters
+    </div>
+    <div
+      bottom="50"
+      class="sc-iBdnpw dQJYDs"
+      mobilebottom="28"
+      mobiletop="10"
+      top="25"
+    >
+      <div
+        class="sc-fsYfdN sc-kFCroH cMJWGl hCaBYj"
+        maxwidth="934"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+    <nav
+      class="sc-csKJxZ jJLqlh"
+    >
+      <nav
+        class="sc-eTNRI cnjtxk"
+      >
+        <div
+          class="sc-guDLey djQIhZ"
+        >
+          <div
+            class="sc-iBdnpw fxJevY"
+            right="10"
+          >
+            <div
+              class="sc-fsYfdN sc-irLvIq CFNGT cliotF"
+            >
+              Filter By:
+            </div>
+          </div>
+          <div
+            class="sc-jTQCzO dykloI"
+            data-testid="select-container"
+            maxwidth="190"
+          >
+            <select
+              class="sc-eDLKkx eMDarx"
+              data-testid="select"
+              disabled=""
+            >
+              <option
+                value=""
+              >
+                All
+              </option>
+            </select>
+            <p
+              class="sc-gLLuof bDTxWV"
+            >
+              ⌄
+            </p>
+          </div>
+        </div>
+        <button
+          class="sc-dmyCSP kluULB"
+          disabled=""
+          maxwidth="158"
+        >
+          CLEAR ALL
+        </button>
+      </nav>
+    </nav>
+    <div
+      bottom="43"
+      class="sc-iBdnpw hhuMHj"
+      mobilebottom="28"
+      mobiletop="28"
+      top="50"
+    >
+      <div
+        class="sc-fsYfdN sc-jsEeTM CFNGT cTplmx"
+      >
+        All Characters
+      </div>
+    </div>
+    <div
+      class="sc-hLQSwg gkBTae"
+    />
+    <div
+      class="sc-brSamD cNiIRU"
+    >
+      <div
+        class="sc-iBdnpw fspkaG"
+        mobileleft="72"
+        mobileright="72"
+      >
+        <div
+          class="sc-fsYfdN sc-irLvIq CFNGT cliotF"
+        >
+          LOADING...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
