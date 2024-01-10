@@ -21,11 +21,6 @@ describe('Person Component', () => {
         expect(getByText('GENDER • Male')).toBeInTheDocument();
     });
 
-    it('renders Person component with correct image alt text', () => {
-        const { getByAltText } = render(<Person {...mockPersonData} />);
-        expect(getByAltText('Person Image')).toBeInTheDocument();
-    });
-
     it('renders Person component with correct spacing', () => {
         const { getByTestId } = render(<Person {...mockPersonData} />);
         expect(getByTestId('spacing-person-name')).toHaveStyle(

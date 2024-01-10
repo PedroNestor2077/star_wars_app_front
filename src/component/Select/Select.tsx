@@ -26,7 +26,7 @@ export const Select = ({
                 data-testid="select"
             >
                 <>
-                    <option value="" disabled selected={!value}>
+                    <option value="" selected={!value}>
                         {placeholder}
                     </option>
                     {options.map((option) => (

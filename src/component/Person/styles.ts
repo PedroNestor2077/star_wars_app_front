@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Typograph } from '../Typograph';
 import colors from '../colors';
+import { breakpoints } from '../breakpoints';
+import { desktopImageUrl, mobileImageUrl } from '../../constants';
 
 export const PersonContainer = styled.div`
     display: flex;
@@ -8,13 +10,42 @@ export const PersonContainer = styled.div`
     background-color: transparent;
     width: 432px;
     height: auto;
+
+    @media ${breakpoints.mobile} {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 `;
 
-export const PersonImage = styled.img`
+export const PersonNameHomelandContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+    /* @media ${breakpoints.mobile} {
+        flex-direction: row;
+        align-items: flex-start;
+    } */
+`;
+
+export const PersonImage = styled.div`
     width: 432px;
     height: 230px;
     background-color: ${colors.grey2};
     border-radius: 2px;
+    background:
+        url(${desktopImageUrl}),
+        lightgray 0px -28.193px / 100% 124.515% no-repeat;
+
+    @media ${breakpoints.mobile} {
+        width: 115px;
+        height: 130px;
+        margin-right: 12px;
+
+        background:
+            url(${mobileImageUrl}),
+            lightgray -63.08px 0px / 209.704% 100% no-repeat;
+    }
 `;
 
 export const PersonName = styled(Typograph)`
@@ -43,4 +74,8 @@ export const PersonInfo = styled(Typograph)`
     line-height: 16px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+
+    @media ${breakpoints.mobile} {
+        display: none;
+    }
 `;

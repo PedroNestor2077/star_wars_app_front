@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../breakpoints';
 
 export const PersonList = styled.div`
     display: flex;
@@ -8,4 +9,8 @@ export const PersonList = styled.div`
     width: 100%;
     row-gap: 110px;
     height: auto;
+
+    @media ${breakpoints.mobile} {
+        row-gap: 46px;
+    }
 `;

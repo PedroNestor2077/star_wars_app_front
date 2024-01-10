@@ -5,6 +5,7 @@ import {
     PersonHomeland,
     PersonInfo,
     PersonName,
+    PersonNameHomelandContainer,
 } from './styles';
 
 interface Props {
@@ -13,26 +14,25 @@ interface Props {
     heigth: string;
     mass: string;
     gender: string;
-    image: string;
 }
 
-export const Person = ({
-    name,
-    homeland,
-    heigth,
-    mass,
-    gender,
-    image,
-}: Props) => {
+export const Person = ({ name, homeland, heigth, mass, gender }: Props) => {
     return (
         <PersonContainer>
-            <PersonImage src={image} alt="Person Image" />
-            <Spacing top={16} data-testid="spacing-person-name">
-                <PersonName>{name}</PersonName>
-            </Spacing>
-            <Spacing top={4} data-testid="spacing-person-homeland">
-                <PersonHomeland>{homeland}</PersonHomeland>
-            </Spacing>
+            <PersonImage />
+            <PersonNameHomelandContainer>
+                <Spacing
+                    top={16}
+                    data-testid="spacing-person-name"
+                    mobileTop={0}
+                >
+                    <PersonName>{name}</PersonName>
+                </Spacing>
+                <Spacing top={4} data-testid="spacing-person-homeland">
+                    <PersonHomeland>{homeland}</PersonHomeland>
+                </Spacing>
+            </PersonNameHomelandContainer>
+
             <Spacing top={12} data-testid="spacing-person-info">
                 <PersonInfo>HEIGTH • {heigth}</PersonInfo>
                 <PersonInfo>MASS • {mass}</PersonInfo>

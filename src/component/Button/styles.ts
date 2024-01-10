@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import colors from '../colors';
+import { breakpoints } from '../breakpoints';
 
 interface Props {
     maxWidth?: number;
     fontSize?: number;
+    hideInMobile?: boolean;
 }
 
 export const Button = styled.button<Props>`
@@ -33,5 +35,9 @@ export const Button = styled.button<Props>`
         color: ${colors.grey4};
         border: 1px solid ${colors.grey4};
         pointer-events: none;
+    }
+
+    @media ${breakpoints.mobile} {
+        ${(props) => props?.hideInMobile && `display:none;`};
     }
 `;

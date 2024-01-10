@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import colors from '../colors';
+import { breakpoints } from '../breakpoints';
 
 interface Props {
     maxWidth?: number;
@@ -23,6 +24,10 @@ export const SelectContainer = styled.div<Props>`
     max-width: ${(props) => props?.maxWidth && `${props?.maxWidth}px`};
     position: relative;
     width: 100%;
+
+    @media ${breakpoints.mobile} {
+        max-width: 100%;
+    }
 `;
 
 export const SelectArrow = styled.p`
