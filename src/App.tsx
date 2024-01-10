@@ -14,6 +14,7 @@ interface Props {
     gender: string;
     image: string;
 }
+
 function App() {
     return (
         <StyledApp>
