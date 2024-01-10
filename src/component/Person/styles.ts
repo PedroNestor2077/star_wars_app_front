@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Typograph } from '../Typograph';
 import colors from '../colors';
 import { breakpoints } from '../breakpoints';
-import { desktopImageUrl, mobileImageUrl } from '../../constants';
+import { DESKTOP_IMAGE_URL, MOBILE_IMAGE_URL } from '../../constants';
 
 export const PersonContainer = styled.div`
     display: flex;
@@ -34,7 +34,7 @@ export const PersonImage = styled.div`
     background-color: ${colors.grey2};
     border-radius: 2px;
     background:
-        url(${desktopImageUrl}),
+        url(${DESKTOP_IMAGE_URL}),
         lightgray 0px -28.193px / 100% 124.515% no-repeat;
 
     @media ${breakpoints.mobile} {
@@ -43,7 +43,7 @@ export const PersonImage = styled.div`
         margin-right: 12px;
 
         background:
-            url(${mobileImageUrl}),
+            url(${MOBILE_IMAGE_URL}),
             lightgray -63.08px 0px / 209.704% 100% no-repeat;
     }
 `;

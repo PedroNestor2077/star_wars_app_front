@@ -18,6 +18,7 @@ export const Select = styled.select<Props>`
     font-family: 'Helvetica Neue';
     -moz-appearance: none;
     -webkit-appearance: none;
+    cursor: pointer;
 `;
 
 export const SelectContainer = styled.div<Props>`

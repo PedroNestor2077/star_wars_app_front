@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints } from '../breakpoints';
 
-export const PersonList = styled.div`
+export const PeopleListContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

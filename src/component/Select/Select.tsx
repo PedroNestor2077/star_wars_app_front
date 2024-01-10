@@ -24,6 +24,7 @@ export const Select = ({
             <StyledSelect
                 onChange={({ target: { value } }) => onSelect(value)}
                 data-testid="select"
+                disabled={!options.length}
             >
                 <>
                     <option value="" selected={!value}>

@@ -8,7 +8,7 @@ import {
     PersonNameHomelandContainer,
 } from './styles';
 
-interface Props {
+export interface People {
     name: string;
     homeland: string;
     heigth: string;
@@ -16,7 +16,7 @@ interface Props {
     gender: string;
 }
 
-export const Person = ({ name, homeland, heigth, mass, gender }: Props) => {
+export const People = ({ name, homeland, heigth, mass, gender }: People) => {
     return (
         <PersonContainer>
             <PersonImage />
