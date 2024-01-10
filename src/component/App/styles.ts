@@ -8,3 +8,10 @@ export const App = styled.div`
     padding-left: 50px;
     padding-right: 50px;
 `;
+
+export const InlineContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+`;
