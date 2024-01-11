@@ -1,8 +1,10 @@
 {
     "name": "star_wars_app_front",
-    "version": "0.1.0",
+    "version": "1.0.0",
+    "homepage": "https://star-wars-app-front.vercel.app",
     "private": true,
     "dependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
@@ -10,11 +12,15 @@
         "@types/node": "^16.18.70",
         "@types/react": "^18.2.47",
         "@types/react-dom": "^18.2.18",
+        "axios": "^1.6.5",
+        "jest-styled-components": "^7.2.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
+        "styled-components": "^6.1.8",
         "typescript": "^5.3.3",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "zod": "^3.22.4"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -26,9 +32,10 @@
         "test:unit": "jest",
         "test:unit:watch": "jest --watch",
         "test:unit:coverage": "jest --coverage",
-        "test:integration": "cypress run",
+        "test:e2e": "cypress run",
         "cypress:open": "cypress open",
-        "test:all": "cypress run && jest"
+        "test:all": "cypress run && jest",
+        "docker:start": "sudo docker-compose up"
     },
     "eslintConfig": {
         "extends": [
