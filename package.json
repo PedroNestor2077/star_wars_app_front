@@ -1,6 +1,7 @@
 {
     "name": "star_wars_app_front",
-    "version": "0.1.0",
+    "version": "1.0.0",
+    "homepage": "https://star-wars-app-front.vercel.app",
     "private": true,
     "dependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",

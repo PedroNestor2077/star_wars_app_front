@@ -31,6 +31,8 @@ We have 2 diferent types of testing where.
 -   If you are in a hurry:
     ` yarn test:all`
 
+### You can see this project running [here](https://star-wars-app-front.vercel.app/)
+
 ## Reporting Issues
 
 If you encounter any issues or have suggestions for improvement, we welcome your feedback. Please follow these steps to open a new issue:
