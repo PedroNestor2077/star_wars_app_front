@@ -11,7 +11,7 @@ This app, made by Pedro Nestor, is for lovers of Star Wars movies.
 ### Running locally
 
 -   In the project root folder:
-    ` docker-compose up --build`
+    ` yarn && docker-compose up --build`
 
     => [http://localhost:3000](http://localhost:3000)
 
